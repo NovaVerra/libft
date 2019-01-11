@@ -1,14 +1,23 @@
-Objectives: C programming can be very tedious when one doesn’t have access to those highly useful
-standard functions. This project makes you to take the time to re-write those functions,
-understand them, and learn to use them. This library will help you for all your future C
-projects.
-Through this project, we also give you the opportunity to expand the list of functions
-with your own. Take the time to expand your libft throughout the year
+# libft
 
-LIBFT is the first project for School 42 in which you build your very own library of functions that prove to be extremely useful and mandatory for projects after this one.
+LIBFT is the first project for School 42 in which you build your very own library of functions that prove to be extremely useful and mandatory for upcoming projects.
 
-Utilizing the library:
-1. git clone into folder
-2. run make
-3. include header file "libft.h" in your code
-4. include library file "libft.a" during compilation
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```zsh
+make
+```
+
+## Usage
+
+```C
+1. #include "libft.h"
+
+2. gcc -Wall -Wextra -Werror main.c -L. libft.a
+```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
