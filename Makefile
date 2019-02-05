@@ -1,7 +1,14 @@
 CC = gcc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRCS = ft_memset.c \
+SRCS = ft_splitdel.c \
+		ft_lstrev.c \
+		ft_lstcount.c \
+		ft_getwordcount.c \
+		ft_lerpi.c \
+		ft_ilerp.c \
+		ft_abs.c \
+		ft_memset.c \
 		ft_bzero.c \
 		ft_memcpy.c \
 		ft_memccpy.c \
@@ -58,9 +65,17 @@ SRCS = ft_memset.c \
 		ft_lstdel.c \
 		ft_lstadd.c \
 		ft_lstiter.c \
-		ft_lstmap.c
+		ft_lstmap.c \
+		get_next_line.c
 
-OBJS = ft_memset.o \
+OBJS = ft_splitdel.o \
+		ft_lstrev.o \
+		ft_lstcount.o \
+		ft_getwordcount.o \
+		ft_lerpi.o \
+		ft_ilerp.o \
+		ft_abs.o \
+		ft_memset.o \
 		ft_bzero.o \
 		ft_memcpy.o \
 		ft_memccpy.o \
@@ -117,7 +132,8 @@ OBJS = ft_memset.o \
 		ft_lstdel.o \
 		ft_lstadd.o \
 		ft_lstiter.o \
-		ft_lstmap.o
+		ft_lstmap.o \
+		get_next_line.o
 
 INC = -I .
 

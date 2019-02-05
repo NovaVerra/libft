@@ -6,13 +6,18 @@
 /*   By: llee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 09:13:03 by llee              #+#    #+#             */
-/*   Updated: 2018/10/22 10:14:30 by llee             ###   ########.fr       */
+/*   Updated: 2019/01/03 18:05:14 by llee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# define BUFF_SIZE 51200
+# define NULL_CHECK(x) if (x == NULL) return (-1);
+
+# include <sys/types.h>
+# include <sys/uio.h>
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -24,6 +29,15 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+int					ft_splitdel(char ***split);
+void				ft_lstrev(t_list **alst);
+size_t				ft_lstcount(t_list *lst);
+size_t				ft_getwordcount(char *str, char tgt);
+int					ft_lerpi(int first, int second, double p);
+double				ft_ilerp(double point, double min, double max);
+int					ft_abs(int i);
+int					read_to_line(int fd, char **line);
+int					get_next_line(const int fd, char **line);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *restrict dst,
